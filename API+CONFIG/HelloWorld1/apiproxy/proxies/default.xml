@@ -9,6 +9,9 @@
             <Step>
                 <Name>ResponseCache</Name>
             </Step>
+             <Step>
+                <Name>ResponseCache</Name>
+            </Step>
         </Request>
         <Response>
             <Step>
