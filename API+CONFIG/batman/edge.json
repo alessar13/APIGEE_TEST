@@ -50,7 +50,7 @@
     },
     "orgConfig": {
         "apiProducts": [{
-            "name": "Batman Product",
+            "name": "EchoProduct",
             "apiResources": [
                 "/",
                 "/**"
@@ -58,16 +58,16 @@
             "approvalType": "auto",
             "attributes": [{
                 "name": "description",
-                "value": "Batman Product"
+                "value": "Echo Product"
             }],
-            "description": "Batman Product",
-            "displayName": "Batman Product",
+            "description": "Echo Product",
+            "displayName": "Echo Product",
             "environments": [
                 "test",
                 "prod"
             ],
             "proxies": [
-                "batman"
+                "HelloWorld1"
             ],
             "quota": "10000",
             "quotaInterval": "1",
@@ -95,10 +95,10 @@
             "timeUnit": "hour"
         }],
         "developers": [{
-                "email": "batman@example.com",
-                "firstName": "Batman",
-                "lastName": "BatmanX",
-                "userName": "batxample",
+                "email": "john@example.com",
+                "firstName": "John",
+                "lastName": "Example",
+                "userName": "johnexample",
                 "attributes": []
             },
             {
@@ -110,15 +110,15 @@
             }
         ],
         "developerApps": {
-            "batman@example.com": [{
-                "name": "batapp",
-                "apiProducts": ["BatProduct"],
+            "john@example.com": [{
+                "name": "coolechoapp",
+                "apiProducts": ["EchoProduct"],
                 "callbackUrl": "http://weatherapp.com",
                 "scopes": []
             }],
-            "superman@unesco.com": [{
-                "name": "superapp",
-                "apiProducts": ["SuperProduct"],
+            "bill@unesco.com": [{
+                "name": "oneechoapp",
+                "apiProducts": ["EchoProduct"],
                 "callbackUrl": "http://weatherapp.com",
                 "scopes": []
             }]
