@@ -12,9 +12,7 @@
     </PostFlow>
     <Flows/>
     <HTTPTargetConnection>
-        <LoadBalancer>
-            <Server name="HTTPBin"/>
-        </LoadBalancer>
-        <Path>/get</Path>
+        <Properties/>
+        <URL>https://mocktarget.apigee.net/json</URL>
     </HTTPTargetConnection>
 </TargetEndpoint>

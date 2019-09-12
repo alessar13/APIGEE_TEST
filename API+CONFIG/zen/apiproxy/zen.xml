@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="zen">
+    <Basepaths>/zen</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1568273683699</CreatedAt>
+    <CreatedBy>alex.chaly13@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>zen</DisplayName>
+    <LastModifiedAt>1568273875471</LastModifiedAt>
+    <LastModifiedBy>alex.chaly13@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:346f44841550f5b8e4d11fa322d98def36dd9656372e78779f481373b61f0650e56cb541203cb7163789a70a945662e8417d775ad41debdcc675be21d7ad14e1</ManifestVersion>
+    <Policies>
+        <Policy>JSON-to-XML-Zen</Policy>
+        <Policy>JavaScriptZen</Policy>
+        <Policy>QuotaZenQuota</Policy>
+        <Policy>Spike-Arrest-Zen</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JavaScript-1.js</Resource>
+    </Resources>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
