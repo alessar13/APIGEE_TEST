@@ -1,0 +1,127 @@
+{
+    "version": "1.0",
+    "envConfig": {
+        "test": {
+            "targetServers": [{
+                "name": "HTTPBin",
+                "host": "httpbin.org",
+                "isEnabled": true,
+                "port": 80
+            }],
+            "virtualHosts": [{
+                "name": "example",
+                "hostAliases": ["example.com"],
+                "isEnabled": true,
+                "port": 80
+            }],
+            "caches": [{
+                "name": "echocache",
+                "description": "echo cache",
+                "expirySettings": {
+                    "timeoutInSec": {
+                        "value": "300"
+                    },
+                    "valuesNull": false
+                }
+            }],
+            "resourcefiles": [{
+                "name": "test",
+                "type": "jsc",
+                "file": "./resourceFiles/jsc/test.js"
+            }],
+            "flowhooks": [{
+                    "name": "PreProxyFlowHook",
+                    "continueOnError": "true",
+                    "sharedFlow": "corspreflow"
+                },
+                {
+                    "name": "PreTargetFlowHook",
+                    "continueOnError": "true",
+                    "sharedFlow": "corspreflow"
+                }
+            ],
+            "extensions": [{
+                "name": "test-extension",
+                "description": "Testing",
+                "packageName": "gcp-stackdriver-logging",
+                "version": "1.2.1"
+            }]
+        }
+    },
+    "orgConfig": {
+        "apiProducts": [{
+            "name": "Batman Product",
+            "apiResources": [
+                "/",
+                "/**"
+            ],
+            "approvalType": "auto",
+            "attributes": [{
+                "name": "description",
+                "value": "Batman Product"
+            }],
+            "description": "Batman Product",
+            "displayName": "Batman Product",
+            "environments": [
+                "test",
+                "prod"
+            ],
+            "proxies": [
+                "batman"
+            ],
+            "quota": "10000",
+            "quotaInterval": "1",
+            "quotaTimeUnit": "month",
+            "scopes": []
+        }],
+        "reports": [{
+            "displayName": "Policy errors",
+            "chartType": "line",
+            "properties": [{
+                "property": "__ui__",
+                "value": [{
+                    "name": "description",
+                    "value": "This report shows the total number policy errors for API proxies. Proxies with zero errors are not shown."
+                }]
+            }],
+            "metrics": [{
+                "function": "sum",
+                "name": "policy_error"
+            }],
+            "dimensions": [
+                "apiproxy"
+            ],
+            "filter": "(policy_error gt 0)",
+            "timeUnit": "hour"
+        }],
+        "developers": [{
+                "email": "batman@example.com",
+                "firstName": "Batman",
+                "lastName": "BatmanX",
+                "userName": "batxample",
+                "attributes": []
+            },
+            {
+                "email": "bill@unesco.com",
+                "firstName": "Bill",
+                "lastName": "Buffalo",
+                "userName": "billunesco",
+                "attributes": []
+            }
+        ],
+        "developerApps": {
+            "batman@example.com": [{
+                "name": "batapp",
+                "apiProducts": ["BatProduct"],
+                "callbackUrl": "http://weatherapp.com",
+                "scopes": []
+            }],
+            "superman@unesco.com": [{
+                "name": "superapp",
+                "apiProducts": ["SuperProduct"],
+                "callbackUrl": "http://weatherapp.com",
+                "scopes": []
+            }]
+        }
+    }
+}

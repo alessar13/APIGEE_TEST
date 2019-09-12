@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <APIProxy revision="4" name="HelloWorld">
-    <Basepaths>/helloworld2</Basepaths>
+    <Basepaths>/batman</Basepaths>
     <ConfigurationVersion majorVersion="4" minorVersion="0"/>
     <CreatedAt>1487673552316</CreatedAt>
     <CreatedBy>madhansivam@gmail.com</CreatedBy>
-    <Description>Hello world application</Description>
-    <DisplayName>HelloWorld2</DisplayName>
+    <Description>Batman application</Description>
+    <DisplayName>batman</DisplayName>
     <LastModifiedAt>1487673829026</LastModifiedAt>
     <LastModifiedBy>madhansivam@gmail.com</LastModifiedBy>
     <Policies>
