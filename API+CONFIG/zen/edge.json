@@ -90,7 +90,7 @@
             "timeUnit": "hour"
         }],
         "developers": [{
-            "email": "john1@example.com",
+            "email": "john@example.com",
             "firstName": "Johnny",
             "lastName": "Example",
             "userName": "johnexample",
